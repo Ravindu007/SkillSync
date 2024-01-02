@@ -6,24 +6,24 @@ const CompanyLogin = () => {
 
   const variants = { 
     initial: {
-      y:20,
+      x:800,
       opacity:0
     },
     animate:{
-      y:0,
+      x:0,
       opacity:1,
       transition:{
         type:'spring',
-        stiffness:800,
-        damping:20
+        stiffness:700,
+        damping:100
       }
     }
   }
   return (
-    <div className='flex w-full h-full border-2 border-black'>
+    <div className='flex w-full h-full'>
 
       <motion.div 
-      className="left hidden md:flex justify-center w-[50%]  h-full  border-2 border-black"
+      className="left hidden md:flex justify-center w-[50%]  h-full"
       variants={variants}
       initial='initial'
       whileInView='animate'
@@ -32,12 +32,12 @@ const CompanyLogin = () => {
       </motion.div>
 
 
-      <div className="right w-[100%] md:w-[50%] h-full  border-2 border-blue-500">
+      <div className="right w-[100%] md:w-[50%] h-[60%] md:h-full shadow-md shadow-primary mx-5 rounded-md">
 
-        <div className="form-container h-full flex  justify-center items-center border-2 border-red-200">
+        <div className="form-container h-full flex  justify-center items-center">
           <form action="" className='w-full h-full flex flex-col items-center justify-center gap-8'>
             <div className="w-full flex justify-center form-group px-1 md:px-5">
-                <p className='text-2xl font-semibold'>Company Login</p>
+                <p className='text-2xl font-semibold'>Welcome back</p>
             </div>
             <div className="w-full form-group px-1 md:px-5">
               <input type="text" className='input-item' placeholder='Enter your email'/>
@@ -47,7 +47,9 @@ const CompanyLogin = () => {
             </div>
             <div className="w-[50%] flex flex-col gap-2 form-group px-1 md:px-5">
               <button className='bg-orange-300  rounded-xl'>Login</button>
-              <a className='hover:underline hover:underline-offset-4' href="">Still havent registered ? click here</a>
+              <div className="sign-up flex flex-row justify-center">
+                <a className='hover:underline hover:underline-offset-4 text-[10px]' href="">Still havent registered click here?</a>
+              </div>
             </div>
           </form>
         </div>

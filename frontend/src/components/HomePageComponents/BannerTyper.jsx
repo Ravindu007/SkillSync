@@ -6,7 +6,7 @@ const BannerTyper = ({text}) => {
   return (
     <Typewriter
       options={{
-        strings: ['Find your dream job or let companies find you'],
+        strings: text,
         autoStart: true,
         loop: true,
       }}

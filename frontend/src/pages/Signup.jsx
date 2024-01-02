@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
-import UserLogin from '../components/LoginPageComponents/UserLogin';
-import CompanyLogin from '../components/LoginPageComponents/CompanyLogin';
+import UserSignup from '../components/SignupPage-compoenets/UserSignup';
+import CompanySignup from '../components/SignupPage-compoenets/CompanySignup';
 
-const Login = () => {
+const Signup = () => {
 
   const buttonVariants = {
     initial:{
@@ -18,10 +18,10 @@ const Login = () => {
     }
   }
 
-  const [showComanyLogin, setShowCompanyLogin] = useState(false);
+  const [showComanySignup, setShowCompanySignup] = useState(false);
 
   const toggleComponent = () => {
-    setShowCompanyLogin(!showComanyLogin);
+    setShowCompanySignup(!showComanySignup);
   };
 
   return (
@@ -30,20 +30,20 @@ const Login = () => {
       <div className="upper w-full h-[20%] flex justify-center">
           <div className="button-div flex items-center">
             <motion.button onClick={toggleComponent} className='button' variants={buttonVariants} initial='initial' whileInView='animate'>
-              {!showComanyLogin ? <p>Are you a company ?</p> : <p>Are you a user ?</p>}
+              {!showComanySignup ? <p>Are you a company ?</p> : <p>Are you a user ?</p>}
             </motion.button>
           </div>
       </div>
 
       <div className="bottom w-full h-[80%]">
-        {!showComanyLogin ? (
-          <UserLogin></UserLogin>
+        {!showComanySignup ? (
+          <UserSignup></UserSignup>
         ) : 
-          <CompanyLogin></CompanyLogin>
+          <CompanySignup></CompanySignup>
         }
       </div>
     </div>
   )
 }
 
-export default Login
+export default Signup
