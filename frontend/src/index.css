@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:'Roboto', sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #f9fbfb;
   color:  #252525;
 }
 
 body {
   margin: 0;
+}
+
+.input-item{
+  @apply w-full shadow-md shadow-gray-700 rounded-md px-2;
+}
+
+.button{
+  @apply w-full px-4 py-1 bg-primary rounded-md font-semibold
 }
