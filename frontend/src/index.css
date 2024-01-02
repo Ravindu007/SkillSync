@@ -16,5 +16,9 @@ body {
 }
 
 .button{
-  @apply w-full px-4 py-1 bg-primary rounded-md font-semibold
+  @apply w-full px-4 py-1 bg-primary rounded-md font-semibold;
+}
+
+.listCard{
+  @apply w-full shadow-md shadow-gray-700 rounded-md px-2 py-5;
 }

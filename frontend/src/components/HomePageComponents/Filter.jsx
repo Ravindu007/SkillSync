@@ -3,7 +3,7 @@ import React from 'react'
 const Filter = () => {
   return (
     <div className='w-full'>
-      <div className="from border-2 border-red-400">
+      <div className="from">
 
         <div className="form-group flex flex-col px-1 md:px-5 py-5">
               <label htmlFor="">Type</label>

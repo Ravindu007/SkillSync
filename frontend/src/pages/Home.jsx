@@ -12,11 +12,11 @@ const Home = () => {
       </div>
 
       <div className='w-full h-screen flex'>
-        <div className="left hidden md:flex w-[30%] border-2 border-black">
+        <div className="left hidden md:flex w-[30%]">
           <Filter></Filter>
         </div>
-        <div className="flex flex-col w-[100%] md:w-[70%] border-2 border-black">
-          <div className="search-bar-container h-auto border-2 border-blue">
+        <div className="flex flex-col w-[100%] h-full md:w-[70%]">
+          <div className="search-bar-container h-auto">
               <SearchBar></SearchBar>
           </div>
           <div className="job-listing-container">
