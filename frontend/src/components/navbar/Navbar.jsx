@@ -6,13 +6,13 @@ const Navbar = () => {
       {/* desktop */}
       <div className="desktop-view hidden md:flex justify-between items-center">
         <div className="brand" >
-          <img src="logos/logo.png" alt="" width={80}/>
+          <a href="/"><img src="logos/logo.png" alt="" width={80}/></a>
         </div>
         <div className="items">
           <ul className='flex gap-10'>
-            <li>Post a Job</li>
-            <li>LogIn</li>
-            <li>Register</li>
+            <a href='/login'>Post a Job</a>
+            <a href='/login'>LogIn</a>
+            <a href=''>Register</a>
           </ul>
         </div>
       </div>
