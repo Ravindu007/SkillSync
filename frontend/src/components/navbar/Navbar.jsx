@@ -13,6 +13,7 @@ const Navbar = () => {
             <a href='/login'>Post a Job</a>
             <a href='/login'>LogIn</a>
             <a href='/signup'>Register</a>
+            <a href='/user/:id'>Profile</a>
           </ul>
         </div>
       </div>
