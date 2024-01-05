@@ -54,7 +54,9 @@ const UserProfile = () => {
                   <div className="left w-full md:w-[40%] border-2 flex justify-center items-center border-black">
 
                         <div className="profile flex h-auto  flex-col items-center gap-2 border-2 border-red-400">
-                            <div className="img-container flex justify-center w-[100px]">
+                            
+                            <div className="img-container flex justify-center w-full gap-2">
+                                <label htmlFor="">Choose your CV</label>
                                 <input type="file"/>
                             </div> 
 
@@ -64,20 +66,20 @@ const UserProfile = () => {
                                 <input type="text" className='border-2 border-black rounded-lg w-full'/>
                               </div>
                               <div className="form-group w-full border-2 border-orange-300 py-2">
-                                <p>Name</p>
+                                <p>Role Applying</p>
                                 <input type="text" className='border-2 border-black rounded-lg w-full'/>
                               </div>
                               <ul className='skills flex flex-col gap-4 w-[70%]'>
                                   <div className="form-group w-full border-2 border-orange-300 py-2">
-                                    <p>Name</p>
+                                    <p>Sjill 1</p>
                                     <input type="text" className='border-2 border-black rounded-lg w-full'/>
                                   </div>
                                   <div className="form-group w-full border-2 border-orange-300 py-2">
-                                    <p>Name</p>
+                                    <p>Skill 2</p>
                                     <input type="text" className='border-2 border-black rounded-lg w-full'/>
                                   </div>
                                   <div className="form-group w-full border-2 border-orange-300 py-2">
-                                    <p>Name</p>
+                                    <p>Skill 3</p>
                                     <input type="text" className='border-2 border-black rounded-lg w-full'/>
                                   </div>
                               </ul>
@@ -113,7 +115,6 @@ const UserProfile = () => {
 
         <div className="right w-full md:w-[60%] border-2 border-black">
           <div className="applications">
-            <p>Applications</p>
             <ApplicationListing></ApplicationListing>
           </div>
         </div>

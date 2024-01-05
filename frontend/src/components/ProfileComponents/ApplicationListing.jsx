@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ApplicationCard from './ApplicationCard'
 
 const ApplicationListing = () => {
 
@@ -8,7 +9,9 @@ const ApplicationListing = () => {
 
   return (
     <div>
-      
+      {applications.map((application) => (
+        <ApplicationCard key={application.id} application={application}></ApplicationCard>
+      ))}
     </div>
   )
 }
